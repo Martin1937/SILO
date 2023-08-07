@@ -43,7 +43,7 @@ slope = max_lr/stepsize
 
 delay = 1
 
-def cal(x, beta = 4, alpha = 0.06, offset = 0.04):
+def cal(x, beta = 5, alpha = 0.06, offset = 0.04):
     #y = (1.0/(math.exp(-k*x)+1))**a
     #y = x/(x + math.exp(c1 - c2*x))
     y = alpha*1/(1+(x/(1-x))**(-beta)) + offset
